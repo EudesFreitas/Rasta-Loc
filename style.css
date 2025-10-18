@@ -36,6 +36,17 @@
         color: #ff9800;
         transform: translateY(-3px); /* sobe 3px */
         }
+    a.titulo {
+        text-decoration: none;
+        
+    }
+    a.titulo:hover {
+        color: #ff9800;
+        transform: translateY(-3px);
+    }
+    img.girar {
+        transform: rotate(90deg);
+    }
     footer {
         text-align: center;
         font-size: 11px;
