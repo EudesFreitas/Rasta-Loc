@@ -10,6 +10,9 @@
             display: flex;
             gap: 40px; /* espaço entre os links */
         }
+        button {
+            
+        }
     </style>
 </head>
 <body>
@@ -18,13 +21,54 @@
          <a href="index.html" rel="prev" class="itens">Inicio</a>
          <a href="alexa.html" rel="prev" class="itens">Voltar</a>
      </div>
-    <main>
+<main class="galeria">
+  <h2 class="titulo">Fotos</h2>
+  <img id="slide" src="imagens/equipamentos/20250826_174204.jpg" width="300px" alt="">
+  <br>
+  <button class="botao" onclick="voltar()">⟨ Anterior</button>
+  <button class="botao" onclick="proximo()">Próxima ⟩</button>
+</main>
+
+<script>
+  const imagens = [
+    { src: "imagens/equipamentos/20250826_174204.jpg", rotacao: 0 },
+    { src: "imagens/equipamentos/20250826_175227.jpg", rotacao: 90},
+    { src: "imagens/equipamentos/20250826_175538.jpg", rotacao: 90},
+    { src: "imagens/equipamentos/20251017_153839.jpg", rotacao: 90},
+    { src: "imagens/equipamentos/20251017_155510.jpg", rotacao: 90}
+  ];
+
+  let index = 0;
+  const slide = document.getElementById("slide");
+
+  function mostrarImagem() {
+    //slide.src = imagens[index];
+    const atual = imagens[index];
+    slide.src = atual.src;
+    slide.style.transform = `rotate(${atual.rotacao}deg)`;
+  }
+
+  function proximo() {
+    index = (index + 1) % imagens.length;
+    mostrarImagem();
+  }
+
+  function voltar() {
+    index = (index - 1 + imagens.length) % imagens.length;
+    mostrarImagem();
+  }
+</script>
+
+    <!-- <main>
         <h2 class="titulo">Fotos</h2>
         <img src="imagens/equipamentos/20250826_174204.jpg" style="width: 250px;" alt="">
         <br>
         <img src="imagens/equipamentos/20250826_175227.jpg" class="girar" width="200px" alt="">
         <br>
         <img src="imagens/equipamentos/20250826_175538.jpg" class="girar" width="200px" alt="">
-    </main>
+    </main> -->
+<footer>
+    &copy; 2025 RASTALOC. 🇯🇲
+</footer>
 </body>
 </html>

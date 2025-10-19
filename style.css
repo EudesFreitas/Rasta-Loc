@@ -47,8 +47,16 @@
     img.girar {
         transform: rotate(90deg);
     }
+    .botao {
+        margin: 10px; /* espaço ao redor do botão */
+        padding: 8px 12px; /* aumenta o tamanho interno */
+        cursor: pointer;
+    }
+    .galeria {
+        text-align: center; /* Centraliza tudo dentro do main */
+    }
     footer {
         text-align: center;
         font-size: 11px;
         padding-top: 60px;
-        }
+    }
