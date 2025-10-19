@@ -2,7 +2,9 @@
  body {
         background-image: linear-gradient(to bottom, #cc1a1a 5%, #129d05, #0c0b0b, #d6f236);
         background-attachment: fixed;
-        margin-left: 60px;
+        margin: auto;
+        /*margin-left: 20px;*/
+        padding-left: 20px;
         }
     main {
         padding-top: 40px;
@@ -51,6 +53,9 @@
         margin: 10px; /* espaço ao redor do botão */
         padding: 8px 12px; /* aumenta o tamanho interno */
         cursor: pointer;
+        border-radius: 10px;
+        color: white;
+        background-color: #363a2f;
     }
     .galeria {
         text-align: center; /* Centraliza tudo dentro do main */
