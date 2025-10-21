@@ -2,9 +2,9 @@
  body {
         background-image: linear-gradient(to bottom, #cc1a1a 5%, #129d05, #0c0b0b, #d6f236);
         background-attachment: fixed;
-        margin: auto;
+        margin: 0px 20px;
         /*margin-left: 20px;*/
-        padding-left: 20px;
+        padding-left: 0px;
         }
     main {
         padding-top: 40px;
